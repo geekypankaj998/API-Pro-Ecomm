@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+    <div id="parent" class="flexVerti">
+      <div id="header" class="flexHori navStyle">
+        <div id="headerBlock">
+          <div class="box">
+            <img src="/images/logo_.jpg" alt="app-icon" title="app-icon" />
+          </div>
+          <div class="box" id="takeHome"><a href="/">HOME</a></div>
+        </div>
+      </div>
+
+      <div id="main" class="flexVerti">
+        <h2>Product List</h2>
+        <div id="prodList" class="flexHori">
+          <%for(itr of productList){%>
+          <div class="flexVerti cardItem">
+            <div class="imgBlock"><img src="/images/cardItem.jpg" alt="cardImage"></div>
+            <div><%=itr.name.toUpperCase()%></div>
+            <div>Quantity : <%=itr.quantity%></div>
+          </div>
+          <%}%>
+        </div>
+      </div>
+
+      <div id="footer" class="flexHori navStyle">
+        <div>
+          Made with
+          <span><img src="/images/love-emoji.png" alt="love-emoji" /></span>
+          from Pankaj :)
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "api-pro",
+  "version": "1.0.0",
+  "description": "This is an E-Commerce API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pankaj Bhatt",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.3.1",
+    "path": "^0.12.7"
+  }
+}
