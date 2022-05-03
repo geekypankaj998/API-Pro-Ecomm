@@ -16,7 +16,7 @@ module.exports.home = async(req,resp)=>{
 
 module.exports.create = async(req,resp)=>{
    try{
-     console.log("@@@@@@@@");
+     
      let proName = req.body.name;
      let proQuant = req.body.quantity;
 
